@@ -12,8 +12,11 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.11"
+python = "3.10.6"
 hydra-core = "^1.1.1"
+python-dotenv = "^0.21.0"
+autopep8 = "^2.0.1"
+
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0.0"
@@ -24,6 +27,8 @@ pdoc = "^7.1.1"
 black = "^22.6.0"
 isort = "^5.10.1"
 readme-coverage-badger = ">=0.1.2,<1.0.0"
+flake8 = "^6.0.0"
+pylint = "^2.15.9"
 
 [tool.pytest.ini_options]
 minversion = "6.0"

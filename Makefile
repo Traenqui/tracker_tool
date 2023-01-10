@@ -12,7 +12,9 @@ endif
 
 # Includes environment variables from the .env file
 include .env
-
+VENV = .venv
+PYTHON = $(VENV)/bin/python3
+PIP = $(VENV)/bin/pip
 # Set gRPC environment variables, which prevents some errors with the `grpcio` package
 export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
 export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
@@ -130,3 +132,6 @@ tree:
 		-I .DS_Store \
 		-I __pycache__ \
 		.
+
+run:
+	$(PYTHON) ./src/tracker_tool/main.py
