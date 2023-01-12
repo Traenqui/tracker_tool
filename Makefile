@@ -72,7 +72,7 @@ view-docs:
 	@echo "Viewing API documentation..."
 	@uname=$$(uname); \
 		case $${uname} in \
-			(*Linux*) openCmd='xdg-open'; ;; \
+			(*Linux*) openCmd='wslview'; ;; \
 			(*Darwin*) openCmd='open'; ;; \
 			(*CYGWIN*) openCmd='cygstart'; ;; \
 			(*) echo 'Error: Unsupported platform: $${uname}'; exit 2; ;; \
