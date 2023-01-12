@@ -12,7 +12,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "3.10.6"
+python = ">=3.8,<3.11"
 hydra-core = "^1.1.1"
 python-dotenv = "^0.21.0"
 autopep8 = "^2.0.1"
